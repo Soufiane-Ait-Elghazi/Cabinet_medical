@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/js1.js"></script>
+    <title>Authentifcation</title>
+    <style>
+        body{
+            background-image: url(/images/medecins-soignants.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        .authen{
+            border: 1px solid rgb(155, 151, 151);
+            width: fit-content;
+            height: fit-content;
+            padding: 10px;
+            border-radius:10px;
+            margin-top: 100px;
+            background-color: #ffffff;
+            opacity: 0.8;
+
+        }
+        .authen:hover{
+    
+           opacity: 0.9;
+        }
+        .form{
+           border-top: 1px solid rgb(168, 164, 164);
+           display: grid;
+           grid-template-columns: repeat(1, 100%);
+           margin-bottom: 10px;
+        }
+        .authen h3{
+            color:  #1c1e21;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .form input{
+            margin-top: 20px;
+            border: none;
+            border-bottom: 1px solid rgb(138, 136, 136);
+            border-radius: 3px 3px 0 0;
+            height: 25px;
+            width: 300px;
+            outline: none;
+        }
+        .form input:last-child{
+            margin-top: 30px;
+          
+        }
+        #incorrect{
+            text-align: center;
+            color: red;
+        }
+        input:hover{
+            outline: 1px solid #1877f2;
+            border:  1px solid #1877f2;
+            border-radius: 3px;
+        }
+        .form input[type='submit']{
+            color: white;
+            
+            font-family: Arial;
+            width: 155px;
+            height: fit-content;
+            padding: 5px;
+            border-radius: 3px;
+            border: 1px;
+            text-align: center;
+            background-color: #1877f2;
+        }
+        .authen a{
+            text-decoration: none;
+            color: #067ff0;
+            font-weight: lighter;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+         
+        }
+        footer {
+            margin-bottom: 0px;
+            margin-top: 20px;
+            padding: 5px;
+            background-color: #45a1ff;
+            opacity: 0.8;
+            color: #fff;
+           }
+           samp{
+               color: pink;
+               font-size: 15px;
+               padding-left: 2px;
+
+           }
+        p{
+            color: white;
+        }
+        .authen button{
+            color: white;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background-color: #00a400;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+        .authen button a{
+            color: white; 
+        }
+    </style>
+</head>
+<body>
+     
+     <center>
+       <div class="authen">
+             <h3>Authentification</h3>
+           <form  class="form" method="post" action="authentification.asp">
+               <input type="text" name="login" id="login" placeholder="Entrer votre login" required>
+               <input type="password" name="password" id="password" placeholder="Entrer le mot de passe " required>
+              <center> <input id="con" type="submit" value="Connecté"></center> 
+           </form>
+           <a href="recuperer.html">recuperer le mot de passe </a>
+           <p id="incorrect" style="display: none;" > login ou mot de passe est incorrect</p>
+           <hr>
+             <button> <a href="inscreption.html">Créer  nouveau compte </a></button>
+       </div>
+    </center>
+         
+</body>
+</html>

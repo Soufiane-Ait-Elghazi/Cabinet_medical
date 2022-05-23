@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creation du Compte</title>
+</head>
+<body>
+    <style>
+        body{
+            background-image: url(/images/digitaliser\ management.jpeg );
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        .sign{
+            border: 1px solid rgb(168, 164, 164);
+            width: fit-content;
+            height: fit-content;
+            padding: 10px;
+            border-radius:10px;
+            margin-top: 100px;
+            background-color: #ffffff;
+            opacity: 0.6;
+            display: grid;
+            grid-template-columns: repeat(1,100%);
+        }
+        .sign:hover{
+            opacity: 0.75;
+        }
+        .formm{
+            border-top: 1px solid rgb(168, 164, 164);
+            width: fit-content;
+            height: fit-content;
+            display: grid;
+            grid-template-columns: repeat(1);
+        }
+        .formm input{
+            margin-top: 20px;
+            border: none;
+            border-bottom: 1px solid rgb(168, 164, 164);
+            border-radius: 3px 3px 0 0;
+            height: 25px;
+            width: 400px;
+            outline: none;
+        }
+        .nomPrenom input{
+            width: 195px;
+        }
+        input:hover{
+            outline: 1px solid #1877f2;
+            border:  1px solid #1877f2;
+            border-radius: 3px;
+        }
+        .formm input[type='submit']{
+            color: white;
+            font-family: Arial;
+            width: 155px;
+            height: fit-content;
+            padding: 5px;
+            border-radius: 3px;
+            border: 1px;
+            text-align: center;
+            background-color: #1877f2;
+        }
+        .formm input:last-child{
+            margin-top: 30px;
+            margin-bottom: 20px;
+          
+        }
+    </style>
+      <center>
+          <div class="sign">
+              <h2>Inscription</h2>
+              
+              <form class="formm" action="inscreption.asp" method="post">
+                 <div class="nomPrenom">
+                     <input type="text" name="nom" id="nom"  placeholder="Entrer votre nom" required>
+                     <input type="text" name="prenom" id="prenom" placeholder="Entrer votre prenom" required>
+                 </div>
+                 <input type="date" name="dateNaissance" id="datenaiss"  placeholder="Date naissance" required   min="1997-01-01" max="2030-12-31">
+                 <input type="email" name="mail" id="email"  placeholder="Entrer votre email" required>
+                 <input type="tel" name="telephone" id="telephone" placeholder="Entrer votre numéro telephone" required> 
+                 <br>
+                 <input type="text" name="login" id="login" placeholder="Entrer votre login" required>
+                 <input type="password" name="password" id="pass1" placeholder="Entrer votre mot de passe" required>
+                 <input type="password" name="confPassword" id="pass2" placeholder="Confirmer votre mot de passe"  required>
+
+                   <center>
+                      <input id='clc' type="submit" value="Sign Up">
+                    </center>
+              </form>
+          </div>
+      </center> 
+    
+</body>
+</html>

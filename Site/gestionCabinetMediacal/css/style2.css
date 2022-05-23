@@ -1,0 +1,266 @@
+body{
+    margin: 0;
+	padding: 0;
+    background-image: linear-gradient( #dfe9f3 40%, bottom white 100%);
+    height: 100vh;
+	
+}
+.header {
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	background-color: #357bfd;
+   }
+   .header h2 span{
+       color: #070707;
+   }
+   .rdv {
+	margin-top: 10.8%;
+	width: 85%;
+	padding: 20px 30px;
+    border-radius: 7px;
+	background-color:#7098e4;
+}
+
+.rdv input, .rdv select {
+	width: 100%;
+    padding: 12px 20px;
+	margin: 8px 0;
+	color: rgb(15, 12, 12);
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+	margin: 4px 0;
+	border: none;
+    display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	cursor: pointer;
+    box-sizing: border-box;
+}
+
+ .rdv input[type="submit"] {
+	width: 120px;
+	cursor: pointer;
+    color: white;
+    font-weight: lighter;
+	background-color: rgb(12, 143, 93);
+}
+.rdv input[type=submit]:hover {
+	background-color: #357bfd;
+}
+
+.rdv label {
+	margin-left: 0;
+}
+
+.rdv form {
+	width: 100%;
+}
+.rdv table{
+    width: 100%;
+}
+.rdv table tr td:first-child{
+    width: 30%;
+}
+.affirdv{
+    margin-top: 25%;
+	width: 85%;
+	padding: 20px 30px;
+    border-radius: 7px;
+	background-color:#b2b8c4;
+    display: none;
+    box-shadow: 5px #357bfd;
+}
+.profil {
+	margin-top: 10.8%;
+	width: 85%;
+	padding: 0 20px;
+    border-radius: 7px;
+	background-color:#7098e4;
+}
+
+.profil img {
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	margin-bottom: 5px;
+	margin-top: -45px;
+}
+
+.divform input {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.divform input {
+	width: 100%;
+	color: rgb(15, 12, 12);
+	margin: 4px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.divform input[type="submit"] {
+	width: 90px;
+    color: white;
+    font-weight: lighter;
+	background-color: rgb(12, 143, 93);
+}
+
+.divform label {
+	margin-left: 0;
+}
+
+.divform input[type=submit]:hover {
+	background-color: #357bfd;
+}
+
+.divform {
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.divform form {
+	width: 100%;
+}
+.divform table{
+    width: 100%;
+}
+.divform table tr td:first-child{
+    width: 30%;
+}
+.mesRDVs, .mesFichiers  {
+    margin-top: 15%;
+    width: 85%;
+    padding: 20px 30px;
+    border-radius: 7px;
+    
+    }
+.mesRDVs table, .mesFichiers table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.mesRDVs th, td, .mesFichiers th, td{
+  text-align: left;
+  padding: 8px;
+}
+
+.mesRDVs tr:nth-child(even),.mesFichiers tr:nth-child(even){background-color: #f2f2f2}
+
+.mesRDVs th {
+  background-color: #04AA6D;
+  color: white;
+}
+.mesFichiers th {
+  background-color: #04AA6D;
+  
+	color: white;
+  }
+  .mesFichiers button{
+	display: block;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	font-size: .75em;
+	height: 30px;
+	width: 90px;
+	line-height: 30px;
+	overflow: hidden;
+	background: #4dbecf;
+	border-radius: 3px;
+	box-shadow: 0 15px 30px rgba(black,.1);
+	border: 0;
+	cursor: pointer;
+  }
+.mesRDVs td img, .signification td img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.att{
+	position: relative;
+	animation-name: example;
+	animation-duration: 10s;
+	animation-delay: 0s;
+}
+@keyframes example {
+	0%   {-webkit-transform: rotate(-360deg); /* rotation de l'image */
+		transform: rotate(-360deg);}
+  }
+.mod {
+	margin-top: 12%;
+	width: fit-content;
+	border-radius: 5px;
+	padding: 25px 30px;
+	padding-bottom: 15px;
+	background-color: #5a7b7c;
+}
+
+.form1 a {
+	text-decoration: none;
+	font-size: 15px;
+	color: #ffffff;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form1 input  {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+.form1 button {
+	width: 90px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(184, 177, 177);
+    font-weight: lighter;
+	background-color: rgb(12, 143, 93);
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: rgb(12, 11, 11);
+  text-align: center;
+}
+
+/* il faut ajouter le code ci dessous dans le fichier style2 chez soufiane*/
+
+.accepte, .refuse{
+	width: 70px;
+	padding: 5px 10px;
+	color: white;
+	font-weight: bolder;
+	font-weight: 500;
+	margin-right: 10px;
+	margin-left: 10px;
+	border: 0;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.accepte{
+	background-color: green;
+}
+.refuse{
+	background-color: red;
+}
+#notification{
+	margin-top: 0;
+    
+}

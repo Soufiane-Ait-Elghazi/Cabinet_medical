@@ -1,0 +1,127 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #84a5b8;
+   
+}
+
+li {
+ float: left;
+}
+
+li a {
+ display: block;
+ color: #fff;
+ font-weight: bolder;
+ text-align: center;
+ padding: 14px 25px;
+ text-decoration: none;
+}
+
+li a:hover:not(.active) {
+ background-color:#0071b4;
+}
+
+.active {
+ background-color: #0071b4;
+} 
+.header{
+   margin-top: -10px;
+   padding: 0.1px;
+   background-color: #001e63;
+   border-bottom: 1px solid black;
+   color: #fff;
+}
+section{
+   padding:2rem 7%;
+}
+.home{
+   height: fit-content;
+   display: flex;
+   align-items: center;
+   background:url(/images/home.png) no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+.home .content{
+   max-width: 60rem;
+}
+
+.home .content h3{
+   font-size: 6rem;
+   text-transform: uppercase;
+   color:rgb(10, 163, 163);
+}
+
+.home .content p{
+   font-size: 2rem;
+   font-weight: bold;
+   line-height: 1.8;
+   padding:1rem 0;
+   color:rgb(15, 15, 15);
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+.about{
+    background:url(/images/about.jpg) no-repeat;
+    background-size: cover;
+   background-position: center;
+   padding-top: 1px;
+}
+.about span{
+    font-weight: bold;
+    color: rgb(138, 4, 138);
+    border-bottom: 1px solid black;
+}
+.about .row{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-gap: 20px;
+}
+.about .row .image{
+    
+    flex:1 1 45rem;
+}
+.image img{
+    width: 100%;
+    margin-left: -30px;
+    border-radius: 7px;
+}
+.about .row .content h3{
+    margin-top: -10px;
+    font-size: 2rem;
+    color:rgb(0, 0, 0);
+}
+.about .row .content p{
+    font-size: 1.25rem;
+    color:rgb(0, 0, 0);
+
+}
+
+.heading{
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.heading span{
+    text-transform: uppercase;
+}
+.about .row .content a{
+   color: rgb(117, 8, 117);
+}
+
+
+

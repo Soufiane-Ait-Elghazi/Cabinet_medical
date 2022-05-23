@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <div>
+         <h3>+username</h3>
+         <textarea name="messageTextArea" id="messageTextArea" cols="30" rows="10" noresize readonly></textarea>
+         <input type="text" name="messageToSend" id="messageToSend"  size="100">
+         <button onclick="send();"> Send </button>
+     </div>
+     <script>
+         var messageTextArea=document.getElementById('messageTextArea').value;
+         var messageToSend=document.getElementById('messageToSend').value;
+         var web =new WebSocket('ws:http://localhost:8080/WebSocket/PointClass/');
+         web.onmessage= function processMessage(message){
+             var jsondata=JSON.parse(message.date);
+             if(jsondata.message!= null)
+             messageTextArea.value+=jsondata.message;
+         }
+         function send(){
+             WebSocket.send(messageToSend);
+            messageToSend='"\"';
+         }
+     </script>
+</body>
+</html>
